@@ -1,0 +1,17 @@
+.custom-calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+}
+
+.newStyle {
+    max-height: 100% !important;
+    background-color: white;
+    color: black;
+}
+
+.newStyle:hover {
+    background-color: #e7e7ea;
+    color: black;
+}
