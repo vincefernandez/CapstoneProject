@@ -2,13 +2,13 @@
 
 require_once('../app/classes.php');
 
-$userdetails = $student->get_user_data();
-//COPY THIS EVERY PAGES PARA BUMALIK PAG HINDI  NAKA SET ANG Userdetails GEGE
+// $userdetails = $student->get_user_data();
+// //COPY THIS EVERY PAGES PARA BUMALIK PAG HINDI  NAKA SET ANG Userdetails GEGE
 
-$StudentIDNumber = $_SESSION['login'];
-if (!isset($userdetails)) {
-    header('location: ../index.php');
-}
+// $StudentIDNumber = $_SESSION['login'];
+// if (!isset($userdetails)) {
+//     header('location: ../index.php');
+// }
 
 $student->SubmitBio();
 $student->UpdateBio();
