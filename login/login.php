@@ -38,7 +38,7 @@ $student->loginUser();
                             <form class="form" action="login.php" method="POST">
                                 <div class="form-group">
                                     <label for="uname1" class="lead text-white">Student Number</label>
-                                    <input type="text" class="form-control form-control-lg rounded-0" name="studno" oninput="this.value=this.value.replace(/[^0-9^-]/g,'');"  required>
+                                    <input type="text" class="form-control form-control-lg rounded-0" name="studno" oninput="this.value=this.value.replace(/[^0-9^-]/g,'');"   maxlength="7" required>
                
                                 </div>
                                 <div class="form-group">

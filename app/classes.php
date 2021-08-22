@@ -80,7 +80,7 @@ class myStudent
                 session_start();
                 $_SESSION['login'] = $Student_Number;
                 $STUDENTIDNumber = $_SESSION['login'];
-                header("location: ../pages/profile.php");
+                header("location: ../pages/Student-user.php");
 
                 $this->get_user_data($user);
             } else {
@@ -168,6 +168,8 @@ class myStudent
 
 
         $connection = $this->OpenConnection();
+       
+       
         if (!isset($_SESSION['login'])) {
 
             $variableAwit =  "<li><a href='login.php'>Login</li></a>";
@@ -472,6 +474,18 @@ class myStudent
                 echo "$noPicture";
             }
         }
+    }
+
+    public function LoginValidation(){
+        $sample1 = $this->getFullName();
+
+        if(!isset($_SESSION)){
+            echo "login";
+        }
+       return $sample1;
+
+        
+        
     }
 }
 
