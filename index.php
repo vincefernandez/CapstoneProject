@@ -56,7 +56,7 @@ require_once('app/classes.php');
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#team">Team</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="login/login.php"><?php $student->getFullName()?></a></li>
+        <li><a href="login/login.php">Login</a></li>
 
 
       </ul>
